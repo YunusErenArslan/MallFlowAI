@@ -69,11 +69,11 @@ def build_explanation(
 
 
 RECOMMENDATION_RULES = [
-    ("food_court", "critical", "Alternatif yemek alanlarını mobil uygulamada öne çıkar."),
+    ("food_court", "critical", "Ziyaretçileri tabela ve anonslarla alternatif yemek alanlarına yönlendir."),
     ("food_court", "critical", "Temizlik personelini bölgeye yönlendir."),
     ("cinema", "critical", "Gişe/giriş için ek yönlendirme personeli görevlendir."),
     ("*", "critical", "Güvenlik personelini yoğun bölgeye yönlendir."),
-    ("*", "high", "Mobil uygulamada bu bölge için alternatif rota/öneri öne çıkar."),
+    ("*", "high", "Bölge girişinde yönlendirme yap; ziyaretçileri daha sakin alanlara yönlendir."),
 ]
 
 
