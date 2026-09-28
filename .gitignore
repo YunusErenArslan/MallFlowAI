@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Veritabanı — backend her açılışta sıfırdan üretir
+*.db
+
+# Model dosyaları — kısa vadeli + trend modelleri her açılışta yeniden eğitilir.
+# Sadece TFT anomali modeli repoda (yoksa açılışta uzun bir eğitim başlar).
+/backend/ml/artifacts/**
+!/backend/ml/artifacts/*/
+!/backend/ml/artifacts/*/anomaly_tft/
+!/backend/ml/artifacts/*/anomaly_tft/**
+
+# Node / Next.js
+node_modules/
+.next/
+build/
+
+# Ortam değişkenleri (örnek: apps/web/.env.example)
+.env*
+!.env.example
+
+# Sistem / editör
+.DS_Store
+.claude/

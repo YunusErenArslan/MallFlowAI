@@ -1,0 +1,10 @@
+# Geliştirmede kullanılan sürümler (Python 3.14 ile test edildi)
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+sqlalchemy==2.0.52
+pydantic==2.13.4
+pandas==3.0.5
+numpy==2.5.2
+scikit-learn==1.9.0
+joblib==1.5.3
+torch==2.13.0

@@ -1,0 +1,56 @@
+{
+  "config": {
+    "arch": "tft",
+    "lag_days": [
+      1
+    ],
+    "use_flow": true,
+    "augment_rate": 0.01,
+    "d_model": 32,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "n_models": 1,
+    "seed": 42,
+    "epochs": 40,
+    "patience": 6,
+    "batch_size": 256
+  },
+  "zone_codes": [
+    "ZONE_001",
+    "ZONE_004",
+    "ZONE_005",
+    "ZONE_006",
+    "ZONE_007",
+    "ZONE_008",
+    "ZONE_009",
+    "ZONE_010",
+    "ZONE_002",
+    "ZONE_003",
+    "ZONE_011",
+    "ZONE_012",
+    "ZONE_013",
+    "ZONE_014"
+  ],
+  "encoder_steps": 32,
+  "quantiles": [
+    0.01,
+    0.05,
+    0.5,
+    0.95,
+    0.99
+  ],
+  "epochs_run": [
+    27
+  ],
+  "train_rows": 32800,
+  "val_rows": 5376,
+  "val_pr_auc_pct": 95.32,
+  "val_mae_pct": 0.822,
+  "val_band_coverage_pct": 94.23,
+  "threshold": {
+    "threshold": 2.4603,
+    "f1": 0.9677,
+    "precision": 1.0,
+    "recall": 0.9375
+  }
+}

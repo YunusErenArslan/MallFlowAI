@@ -1,0 +1,49 @@
+{
+  "config": {
+    "arch": "tft",
+    "lag_days": [
+      1
+    ],
+    "use_flow": true,
+    "augment_rate": 0.01,
+    "d_model": 32,
+    "n_heads": 4,
+    "dropout": 0.1,
+    "n_models": 1,
+    "seed": 42,
+    "epochs": 40,
+    "patience": 6,
+    "batch_size": 256
+  },
+  "zone_codes": [
+    "B_ENTRANCE",
+    "B_RETAIL_1",
+    "B_INFO",
+    "B_WALKWAY",
+    "B_FOODCOURT",
+    "B_KIDS",
+    "B_SERVICE"
+  ],
+  "encoder_steps": 32,
+  "quantiles": [
+    0.01,
+    0.05,
+    0.5,
+    0.95,
+    0.99
+  ],
+  "epochs_run": [
+    32
+  ],
+  "train_rows": 16407,
+  "val_rows": 2688,
+  "val_pr_auc_pct": 92.29,
+  "val_mae_pct": 1.471,
+  "val_band_coverage_pct": 99.4,
+  "threshold": {
+    "threshold": 1.3778,
+    "f1": 0.8934,
+    "precision": 1.0,
+    "recall": 0.8073
+  }
+}
